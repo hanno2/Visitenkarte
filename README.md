@@ -31,3 +31,7 @@ Das Hauptziel dieses Projekts ist es, eine saubere, semantisch korrekte und zug�
 ## Verwendung
 
 Um die Webseite anzusehen, öffnen Sie die `index.html`-Datei einfach in einem beliebigen modernen Webbrowser.
+
+## Kontakt
+
+Für Fragen oder Feedback erreichen Sie mich unter: [hanno.leweke@tn.techstarter.de](mailto:hanno.leweke@tn.techstarter.de)
