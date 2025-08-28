@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+    <meta charset="utf-8">
+    <meta name="author" content="Hanno Leweke">
+    <meta name="description" content="Meine erste eigene HTML-Seite">
+    <title>Hanno Leweke – Visitenkarte</title>
+</head>
+<body>
+    <header>
+        <h1>Willkommen auf meiner Seite!</h1>
+        <p>Hallo, ich bin Hanno und lerne gerade HTML.</p>
+        <img src="profil.jpg" alt="Profilbild von Hanno" width="200">
+    </header>
+
+    <nav>
+        <p>
+            <a href="https://www.wikipedia.org/" target="_blank">Besuche Wikipedia</a> |
+            <a href="#kontakt">Zum Kontaktformular springen</a>
+        </p>
+    </nav>
+
+    <main>
+        <section>
+            <h2>Mein Einführungsvideo</h2>
+            <video controls width="320">
+                <source src="intro.mp4" type="video/mp4">
+                Dein Browser unterstützt das Video nicht.
+            </video>
+        </section>
+
+        <section id="kontakt">
+            <h2>Kontakt</h2>
+            <form action="send.php" method="post" enctype="multipart/form-data">
+                <fieldset>
+                    <legend>Deine Daten</legend>
+                    
+                    <p>
+                        <label for="name">Name (Pflichtfeld):</label><br>
+                        <input type="text" id="name" name="name" required placeholder="Hanno Leweke">
+                    </p>
+                    
+                    <p>
+                        <label for="email">E-Mail (Pflichtfeld):</label><br>
+                        <input type="email" id="email" name="email" required>
+                    </p>
+                    
+                    <p>
+                        <label for="file">Profilbild hochladen:</label><br>
+                        <input type="file" id="file" name="file" accept="image/png, image/jpeg">
+                    </p>
+                </fieldset>
+                
+                <fieldset>
+                    <legend>Deine Meinung</legend>
+                    
+                    <p>
+                        <label for="browser">Welchen Browser nutzt du?</label><br>
+                        <select id="browser" name="browser">
+                            <option value="firefox">Firefox</option>
+                            <option value="chrome">Chrome</option>
+                        </select>
+                    </p>
+                    
+                    <p>
+                        <label for="comment">Dein Kommentar:</label><br>
+                        <textarea id="comment" name="comment" rows="4" cols="40" placeholder="Schreibe hier deine Nachricht..."></textarea>
+                    </p>
+                    
+                    <p>
+                        <input type="checkbox" id="newsletter" name="newsletter" value="yes">
+                        <label for="newsletter">Newsletter abonnieren</label>
+                    </p>
+                </fieldset>
+                
+                <p>
+                    <button type="submit">Absenden</button>
+                </p>
+            </form>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; 2025 Hanno Leweke</p>
+    </footer>
+</body>
+</html>
